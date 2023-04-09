@@ -1,4 +1,5 @@
 #include "seamcarving.h"
+#include "c_img.c"
 #include <math.h>
 
 void calc_energy(struct rgb_img *im, struct rgb_img **grad) {
@@ -96,7 +97,7 @@ void remove_seam(struct rgb_img *src, struct rgb_img **dest, int *path) {
     }
 }
 
-int main1() {
+int main() {
     struct rgb_img *im;
     struct rgb_img *cur_im;
     struct rgb_img *grad;
